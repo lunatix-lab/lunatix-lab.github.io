@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2KJ8NG73J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-G2KJ8NG73J');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../../src/styles/nav-bar.css">
+    <link rel="stylesheet" href="../../../../src/styles/blog.css">
+    <link rel="stylesheet" href="../../../../src/styles/footer.css">
+    <title>Lunatix Lab</title>
+  </head>
+
+  <body>
+    <!--  Start Header -->
+    <header>
+      <nav class="nav-bar">
+
+        <div class="logo">
+          <h1> Lunatix Lab</h1>
+        </div>
+
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="https://lunatix.com.br/" class="nav-link">Home</a></li>
+            <li class="nav-item-dropdown"><a href="#" class="nav-link">Blog <i class="fa-solid fa-angle-down nav-item-arrow"></i></a>
+              <div class="nav-item-dropdown-menu">
+                <a href="https://lunatix.com.br/pt-br/blog/" class="nav-link">Português</a>
+                <a href="https://lunatix.com.br/en/blog/" class="nav-link">English</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="https://lunatix.com.br/pt-br/blog/general/welcome/" class="nav-link">Sobre</a></li>
+          </ul>
+        </div>
+
+        <div class="donate-button">
+          <button><a href="#">Doar</a></button>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow('../../../../')"><img class="icon" src="../../../../src/images/menu_white_36dp.svg" alt=""></button>
+        </div>
+
+      </nav>
+
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="https://lunatix.com.br/" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="https://lunatix.com.br/pt-br/blog/general/welcome/" class="nav-link">Sobre</a></li>
+        </ul>
+
+        <div class="donate-button">
+          <button><a href="#">Doar</a></button>
+        </div>
+
+      </div>
+    </header>
+    <!--  End Header -->
+
+    <!--  Start Main Content -->
+    <main>
+      <div class="container">
+        <div class="column-left">
+          
+          <!-- Menu -->
+          <div class="menu-box">
+            <div class="menu-box-header">
+              <h4>Menu</h4>
+            </div>
+            <ul>
+              <li>
+                <span class="menu-box-item"><a href="https://lunatix.com.br/pt-br/blog/general/">Geral</a></span>
+              </li>
+              <li>
+                <span class="menu-box-item"><a href="#">Arquitetura de Computadores</a></span>
+              </li>
+              <li>
+                <span class="menu-box-item"><a href="#">Compiladores</a></span>
+              </li>
+              <li>
+                <span class="menu-box-item"><a href="#">Cibersegurança</a></span>
+              </li>
+            </ul>
+          </div> <!-- END: menu-box -->
+
+        </div> <!-- END: column-left -->
+
+        <div class="column-center">
+
+          <div class="blog-box">
+
+            <div class="blog-box-banner">
+              <img src="../../../../src/images/welcome-banner.png" alt="Image">
+            </div>
+
+            <div class="blog-box-text">
+              <h1>
+                Bem-vindo ao Lunatix
+                Lab!
+              </h1>
+              <div class="blog-box-author"><span>Autor: Lunatix</span></div>
+              <div class="created-date"><span>Criado: 3 Janeiro, 2025<!-- / Last modified: Month Day, 2025--></span></div>
+              <div class="blog-box-advertise-banner">
+                <!-- TODO -->
+                <span>Advertise</span>
+              </div>
+              <p>
+                Olá, seja muito bem-vindo ao Lunatix Lab, um espaço dedicado a
+                desenvolver conhecimentos nas áreas de ciência da computação e
+                cibersegurança. A ideia central deste blog é documentar meus estudos em
+                arquitetura de computadores, compiladores, e cibersegurança. Mas quem
+                sou eu? Sou uma pessoa curiosa que gosta de estudar e entender como as
+                coisas funcionam nos seus detalhes. Então, aqui você vai encontrar:
+                explicações teóricas de temas importantes da ciência da computação,
+                aplicações práticas das teorias estudadas, tutoriais de como instalar e
+                configurar ferramentas, entre outros.
+                <!-- -------------------------------------------------------------- -->
+              </p>
+              <p>
+                Não se assuste! Também usarei esse espaço para colocar ideias e pensamentos
+                que podem não ter a ver com ciência da computação. Por exemplo, você
+                pode encontrar avaliações de restaurantes que eu ou um amigo conheceu,
+                receitas de pratos que eu gosto de fazer, textos sobre política ou
+                talvez tudo isso junto num mesmo texto. Tentarei, ao máximo, separá-los
+                em categorias para organizar e melhorar a procura de artigos
+                específicos, porém, como esse blog, atualmente, não possui lógica de
+                backend, nem sempre será possível facilitar a vida do leitor.
+                <!-- -------------------------------------------------------------- -->
+              </p>
+              <p>
+                O design do site Lunatix Lab será uma metamorfose ambulante, pois,
+                estará sempre mudando para ficar mais agradável ao leitor. Como web
+                design não é minha especialidade, vou melhorando o layout e as
+                funcionalidades do frontend conforme vou avançando nos meus estudos
+                sobre HTML, CSS e Javascript. Espero que essas mudanças constantes no
+                design não afaste você, caro leitor.
+                <!-- -------------------------------------------------------------- -->
+              </p>
+              <div class="blog-box-advertise-banner">
+                <!-- TODO -->
+                <span>Advertise</span>
+              </div>
+              <p>
+                Caso queira entrar em contato para dar sua opnião sobre os assuntos
+                escritos aqui, você pode utilizar o
+                e-mail escravosdopoder@yahoo.com.br. Estou aberto a ouvir críticas e
+                correções, entretanto, saiba que não estou interessado no seu ódio,
+                guarde-o apenas para você. Obrigado! Se desejar receber notificações
+                sobre novos conteúdos, pode mandar uma mensagem para o e-mail acima,
+                será um prazer ter você como leitor.
+                <!-- -------------------------------------------------------------- -->
+              </p>
+              <p>
+                Sendo assim, desejo a todos uma ótima leitura e que possamos aprender muito juntos.</br>
+                <!-- -------------------------------------------------------------- -->
+              </p>
+              <p>
+                Até!
+                <!-- -------------------------------------------------------------- -->
+              </p>
+            </div> <!-- END: blog-box-text -->
+
+            <div class="blog-box-reference">
+              <h4>Referências:</h4>
+              <!-- TODO -->
+            </div> <!-- END: blog-box-reference -->
+
+            <div class="blog-box-navigation">
+              <div class="blog-box-navigation-before">
+                <button><a href="#">Anterior</a></button>
+              </div>
+              <div class="blog-box-navigation-next">
+                <button><a href="#">Próximo</a></button>
+              </div>
+            </div> <!-- END: blog-box-navigation -->
+
+          </div> <!-- END: blog-box -->
+        </div> <!-- END: column-center -->
+
+        <div class="column-right">
+          <!-- Posts -->
+          <div class="popular-posts">
+            <div class="popular-posts-header">
+              <h4> Posts Populares</h4>
+            </div>
+            <ul>
+              <li>
+                <img src="../../../../src/images/one.png" alt="Image">
+                <span class="popular-posts-title"><a href="https://lunatix.com.br/pt-br/blog/general/welcome/">Bem-vindo ao Lunatix Lab!</a></span>
+                <br>
+                <span class="popular-posts-author">Autor: Lunatix</span>
+              </li>
+              <li>
+                <img src="../../../../src/images/two.png" alt="Image">
+                <span class="popular-posts-title"><a href="https://lunatix.com.br/pt-br/blog/general/welcome/">Bem-vindo ao Lunatix Lab!</a></span>
+                <br>
+                <span class="popular-posts-author">Autor: Lunatix</span>
+              </li>
+              <li>
+                <img src="../../../../src/images/three.png" alt="Image">
+                <span class="popular-posts-title"><a href="https://lunatix.com.br/pt-br/blog/general/welcome/">Bem-vindo ao Lunatix Lab!</a></span>
+                <br>
+                <span class="popular-posts-author">Autor: Lunatix</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Advertising 01 -->
+          <div class="advertise-box">
+            <div class="advertise-box-header">
+              <h4>Advertise</h4>
+            </div>
+            <div class="advertise-box-content">
+                <!-- TODO -->
+            </div>
+          </div> <!-- END: Advertising 01 -->
+
+          <!-- Advertising 02 -->
+          <div class="advertise-box">
+            <div class="advertise-box-header">
+              <h4>Advertise</h4>
+            </div>
+            <div class="advertise-box-content">
+                <!-- TODO -->
+            </div>
+          </div> <!-- END: Advertising 02 -->
+
+        </div>
+      </div>
+    </main>
+    <!--  End Main Content -->
+
+
+    <!--  Start footer -->
+    <footer>
+      <div id="footer_content">
+        <div id="footer_contacts">
+          <h1>Lunatix Lab</h1>
+          <p>The lunatix is in my head</p>
+
+          <div id="footer_social_media">
+            <a href="https://github.com/lunatix-lab" class="footer-link" id="github">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@lunatix-lab" class="footer-link" id="youtube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div> <!-- END: footer_social_media -->
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <h3>Blog</h3>
+          </li>
+
+          <li>
+            <a href="https://lunatix.com.br/pt-br/blog/" class="footer-link">Português</a>
+          </li>
+
+          <li>
+            <a href="https://lunatix.com.br/en/blog/" class="footer-link">English</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <h3>Projetos</h3>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Projeto#01</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Projeto#02</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Projeto#03</a>
+          </li>
+        </ul>
+
+        <div id="footer_subscribe">
+          <h3>Inscreva-se</h3>
+
+          <p>
+            Insira seu e-mail para receber notificações
+            sobre novos conteúdos
+          </p>
+
+          <form id="input_group" action="mailto:escravosdopoder@yahoo.com.br" method="post" enctype="text/plain">
+            <input type="email" id="email">
+            <button type="submit">
+              <i class="fa-regular fa-envelope"></i>
+            </button>
+            <label type="hidden"  for="text-content"></label><input type="hidden" id="text-content" name="=" value=">Inscreva-me para receber notificações sobre novos conteúdos">
+          </form>
+        </div>
+      </div>
+
+      <div id="footer_copyright">
+        &#169
+        2025 lunatix-lab all rights reserved
+      </div>
+    </footer>
+    <!--  End Footer -->
+
+    <!--  START: Java Script -->
+    <script src="../../../../src/javascript/script.js"></script>
+    <!--  END: Java Script -->
+  </body>
+
+</html> 
