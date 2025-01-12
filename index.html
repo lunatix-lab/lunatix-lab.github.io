@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2KJ8NG73J"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -16,7 +16,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/nav-bar.css">
+    <link rel="stylesheet" href="src/styles/landing.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
     <title>Lunatix Lab</title>
   </head>
 
@@ -31,14 +33,19 @@
 
         <div class="nav-list">
           <ul>
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="https://lunatix.com.br/" class="nav-link">Home</a></li>
+            <li class="nav-item-dropdown"><a href="#" class="nav-link">Blog <i class="fa-solid fa-angle-down nav-item-arrow"></i></a>
+              <div class="nav-item-dropdown-menu">
+                <a href="https://lunatix.com.br/pt-br/blog/" class="nav-link">Português</a>
+                <a href="https://lunatix.com.br/en/blog/" class="nav-link">English</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="https://lunatix.com.br/en/blog/general/welcome/" class="nav-link">About</a></li>
           </ul>
         </div>
 
-        <div class="login-button">
-          <button><a href="#">Login</a></button>
+        <div class="donate-button">
+          <button><a href="#">Donate</a></button>
         </div>
 
         <div class="mobile-menu-icon">
@@ -49,13 +56,13 @@
 
       <div class="mobile-menu">
         <ul>
-          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="https://lunatix.com.br/" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="https://lunatix.com.br/en/blog/general/welcome/" class="nav-link">About</a></li>
         </ul>
 
-        <div class="login-button">
-          <button><a href="#">Login</a></button>
+        <div class="donate-button">
+          <button><a href="#">Donate</a></button>
         </div>
 
       </div>
@@ -69,8 +76,59 @@
         </div>
 
         <div class="column-center">
-          <img src="src/images/under.construction.webp">
-          <h1> Site Under Construction </h1>
+
+          <div class="welcome">
+
+            <div class="welcome-item-msg">
+              <h1> Welcome to Lunatix Lab </h1>
+              <p>
+                This page consolidates information on studies and research in key
+                areas of computer science, including microprocessors, compilers,
+                operating systems, and cybersecurity. These fields are vital for
+                technological progress, directly influencing the performance and
+                security of computing systems. The goal of this space is to explore
+                innovative techniques, architectures, and solutions to address the
+                emerging challenges in computing and cybersecurity. The content
+                provided offers a comprehensive overview of the ongoing initiatives,
+                showcasing the contributions of this group to advancing knowledge
+                and technology.
+              </p>
+              <div id="read_me">
+                <i> Read our blog in english: </i>
+                <button><a href="https://lunatix.com.br/en/blog/">EN</a></button>
+              </div>
+            </div> <!--  END: welcome-item-msg -->
+
+            <div class="welcome-item-img">
+              <img src="src/images/baloon.png">
+            </div>
+
+            <div class="welcome-item-img">
+              <!-- Do nothing -->
+            </div>
+
+            <div class="welcome-item-msg">
+              <h1> Bem-vindo ao Lunatix Lab </h1>
+              <p>
+                Esta página consolida informações sobre estudos e pesquisas em
+                áreas-chave da ciência da computação, incluindo microprocessadores,
+                compiladores, sistemas operacionais e cibersegurança. Estes campos
+                são vitais para o progresso tecnológico, influenciando diretamente
+                o desempenho e a segurança dos sistemas computacionais. O objetivo
+                deste espaço é explorar técnicas, arquiteturas e soluções
+                inovadoras para enfrentar os desafios emergentes em computação e
+                cibersegurança. O conteúdo disponibilizado oferece uma visão
+                abrangente das iniciativas em andamento, destacando as
+                contribuições deste grupo para o avanço do conhecimento e da
+                tecnologia.
+              </p>
+              <div id="read_me">
+                <i> Leia o nosso blog em português: </i>
+                <button><a href="https://lunatix.com.br/pt-br/blog/">PT-BR</a></button>
+              </div>
+            </div> <!--  END: welcome-item-msg -->
+
+          </div> <!--  END: welcome -->
         </div>
 
         <div class="column-right">
@@ -84,22 +142,18 @@
     <footer>
       <div id="footer_content">
         <div id="footer_contacts">
-          <h1>Lunatix-Lab</h1>
+          <h1>Lunatix Lab</h1>
           <p>The lunatix is in my head</p>
 
           <div id="footer_social_media">
-            <a href="#" class="footer-link" id="instagram">
-              <i class="fa-brands fa-instagram"></i>
+            <a href="https://github.com/lunatix-lab" class="footer-link" id="github">
+              <i class="fa-brands fa-github"></i>
             </a>
 
-            <a href="#" class="footer-link" id="facebook">
-              <i class="fa-brands fa-facebook-f"></i>
+            <a href="https://www.youtube.com/@lunatix-lab" class="footer-link" id="youtube">
+              <i class="fa-brands fa-youtube"></i>
             </a>
-
-            <a href="#" class="footer-link" id="whatsapp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
+          </div> <!-- END: footer_social_media -->
         </div>
 
         <ul class="footer-list">
@@ -108,63 +162,59 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Tech</a>
+            <a href="https://lunatix.com.br/pt-br/blog/" class="footer-link">Português</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Adventures</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Music</a>
+            <a href="https://lunatix.com.br/en/blog/" class="footer-link">English</a>
           </li>
         </ul>
 
-
         <ul class="footer-list">
           <li>
-            <h3>Products</h3>
+            <h3>Projects</h3>
           </li>
 
           <li>
-            <a href="#" class="footer-link">App</a>
+            <a href="#" class="footer-link">Project#01</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Desktop</a>
+            <a href="#" class="footer-link">Project#02</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Cloud</a>
+            <a href="#" class="footer-link">Project#03</a>
           </li>
         </ul>
 
         <div id="footer_subscribe">
           <h3>Subscribe</h3>
-
           <p>
-            Enter your e-mail to get notified about
-            our new solutions
+            Enter your e-mail to get notified about our
+            new contents
           </p>
 
-          <div id="input_group">
+          <form id="input_group" action="mailto:escravosdopoder@yahoo.com.br" method="post" enctype="text/plain">
             <input type="email" id="email">
-            <button>
+            <button type="submit">
               <i class="fa-regular fa-envelope"></i>
             </button>
-          </div>
+            <label type="hidden"  for="text-content"></label><input type="hidden" id="text-content" name="=" value=">Subscribe me to get notified about new contents">
+          </form>
         </div>
       </div>
 
       <div id="footer_copyright">
         &#169
-        2024 lunatix-lab all rights reserved
+        2025 lunatix-lab all rights reserved
       </div>
     </footer>
     <!--  End Footer -->
 
-
+    <!--  START: Java Script -->
     <script src="src/javascript/script.js"></script>
+    <!--  END: Java Script -->
   </body>
 
 </html> 
