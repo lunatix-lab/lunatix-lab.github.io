@@ -82,32 +82,19 @@ footer {
     color: var(--color-neutral-30);
 }
 
-#input_group {
-    display: flex;
-    align-items: center;
-    background-color: var(--color-neutral-0);
-    border-radius: 4px;
-}
-
-#input_group input {
-    all: unset;
-    padding: 0.75rem;
-    width: 100%;
-}
-
-#input_group button {
+#footer_subscribe button {
     background-color: #7f37c9;
     border: none;
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;
     font-size: 1.125rem;
     height: 100%;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 4px 4px 4px 4px;
     cursor: pointer;
     transition: 0.4s;
 }
 
-#input_group button:hover {
+#footer_subscribe button:hover {
     opacity: 0.8;
 }
 
