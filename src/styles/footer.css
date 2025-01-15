@@ -74,12 +74,16 @@ footer {
 
 #footer_subscribe {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1.5rem;
 }
 
 #footer_subscribe p {
     color: var(--color-neutral-30);
+}
+
+#footer_subscribe a {
+    color: #ffffff;
 }
 
 #footer_subscribe button {
@@ -88,7 +92,6 @@ footer {
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;
     font-size: 1.125rem;
-    height: 100%;
     border-radius: 4px 4px 4px 4px;
     cursor: pointer;
     transition: 0.4s;
@@ -110,7 +113,15 @@ footer {
 /******************************************************************************
  * Responsive Footer Style
  *****************************************************************************/
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 1280px) {
+    #footer_subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+ }
+
+@media screen and (max-width: 950px) {
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;

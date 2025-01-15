@@ -56,16 +56,21 @@
 
       <div class="mobile-menu">
         <ul>
-          <li class="nav-item"><a href="https://lunatix.com.br/" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="https://lunatix.com.br/en/blog/general/welcome/" class="nav-link">About</a></li>
+          <li class="nav-item-mobile"><a href="https://lunatix.com.br/" class="nav-link">Home</a></li>
+          <li class="nav-item-dropdown-mobile"><a href="#" class="nav-link">&nbsp;&nbsp;Blog <i class="fa-solid fa-angle-down nav-item-arrow"></i></a>
+            <div class="nav-item-dropdown-mobile-menu">
+              <a href="https://lunatix.com.br/pt-br/blog/" class="nav-link">Português</a>
+              <a href="https://lunatix.com.br/en/blog/" class="nav-link">English</a>
+            </div>
+          </li>
+          <li class="nav-item-mobile"><a href="https://lunatix.com.br/en/blog/general/welcome/" class="nav-link">About</a></li>
         </ul>
 
         <div class="donate-button">
           <button><a href="#">Donate</a></button>
         </div>
 
-      </div>
+      </div>  <!--  End mobile-menu -->
     </header>
     <!--  End Header -->
 
@@ -298,9 +303,8 @@
           <p>
             Enter your e-mail to get notified about our
             new contents
-            <button type="submit" form="input_group"><i class="fa-regular fa-envelope"></i></button>
           </p>
-          <form id="input_group" action="mailto:escravosdopoder@yahoo.com.br" method="post" enctype="multipart/form-data"></form></form>
+          <span><button><a href="mailto:escravosdopoder@yahoo.com.br"><i class="fa-regular fa-envelope"></i></a></button></span>
         </div> <!--  End footer_subscribe -->
       </div>
 
