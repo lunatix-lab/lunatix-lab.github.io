@@ -132,9 +132,100 @@ header {
 /******************************************************************************
  * Responsive Header Style
  *****************************************************************************/
- @media screen and (max-width: 950px) {
+@media screen and (min-width: 400px) and (max-width: 950px) {
     .nav-bar {
         padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .nav-item-dropdown {
+        display: none;
+    }
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2.0;
+    }
+    
+    .mobile-menu ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        align-items: center;
+    }
+    
+    .mobile-menu ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    .nav-item-mobile {
+        margin: 0 15px;
+    }
+    .nav-item-dropdown-mobile {
+        color: #ffffff;
+    }
+    .nav-item-dropdown-mobile:hover .nav-item-dropdown-mobile-menu {
+        display: flex;
+    }
+
+    .nav-item-dropdown-mobile-menu {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 15px #7f37c9;
+        line-height: 2.0;
+    }
+    .nav-item-dropdown-mobile:hover .nav-item-arrow {
+        transform: rotate(180deg);
+    }
+    .nav-item-arrow {
+        transition: 0.2s;
+    }
+    .donate-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .donate-button {
+        display: block;
+        padding: 1rem 2rem;
+        align-items: center;
+    }
+    .mobile-menu .donate-button button {
+        width: 100%;
+    }
+    .open {
+        display: flex;
+    }
+ }
+
+@media screen and (max-width: 399px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .logo h1 {
+        font-size: 25px;
     }
     .nav-item {
         display: none;

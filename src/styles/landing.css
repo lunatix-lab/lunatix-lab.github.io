@@ -125,11 +125,52 @@
 /******************************************************************************
  * Responsive Header Style
  *****************************************************************************/
- @media screen and (max-width: 1280px) {
+ @media screen and (min-width: 631px) and (max-width: 1280px) {
     .column-right {
         display: none;
     }
     .column-left {
         display: none;
+    }
+ }
+
+ @media screen and (min-width: 400px) and (max-width: 630px) {
+    .column-right {
+        display: none;
+    }
+    .column-left {
+        display: none;
+    }
+    .welcome-item-img {
+        display: none;
+    }
+    .welcome-item-msg {
+        width: 100%;
+    }
+ }
+
+ @media screen and (max-width: 399px) {
+    .column-right {
+        display: none;
+    }
+    .column-left {
+        display: none;
+    }
+    .welcome-item-img {
+        display: none;
+    }
+
+    .welcome-item-msg {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .welcome-item-msg h1 {
+        font-size: 25px;
+    }
+
+    .welcome-item-msg p {
+        line-height: 1.2;
+        font-size: 13px;
     }
  }
