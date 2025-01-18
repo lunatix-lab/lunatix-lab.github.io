@@ -28,7 +28,7 @@
       <nav class="nav-bar">
 
         <div class="logo">
-          <h1> Lunatix Lab</h1>
+          <h1>Lunatix Lab</h1>
         </div>
 
         <div class="nav-list">
@@ -38,6 +38,14 @@
               <div class="nav-item-dropdown-menu">
                 <a href="https://lunatix.com.br/pt-br/blog/" class="nav-link">Português</a>
                 <a href="https://lunatix.com.br/en/blog/" class="nav-link">English</a>
+              </div>
+            </li>
+            <li id="nav_item_dropdown_category" class="nav-item-dropdown"><a href="#" class="nav-link">Categoria <i class="fa-solid fa-angle-down nav-item-arrow"></i></a>
+              <div class="nav-item-dropdown-menu">
+                <a href="https://lunatix.com.br/pt-br/blog/general/" class="nav-link">Geral</a>
+                <a href="#" class="nav-link">Arquitetura de Computadores</a>
+                <a href="#" class="nav-link">Compiladores</a>
+                <a href="#" class="nav-link">Cibersegurança</a>
               </div>
             </li>
             <li class="nav-item"><a href="https://lunatix.com.br/pt-br/blog/general/welcome/" class="nav-link">Sobre</a></li>
@@ -57,10 +65,18 @@
       <div class="mobile-menu">
         <ul>
           <li class="nav-item-mobile"><a href="https://lunatix.com.br/" class="nav-link">Home</a></li>
-          <li class="nav-item-dropdown-mobile"><a href="#" class="nav-link">&nbsp;&nbsp;Blog <i class="fa-solid fa-angle-down nav-item-arrow"></i></a>
+          <li class="nav-item-dropdown-mobile"><a href="#" class="nav-link" onclick="blogLngShow(event);">&nbsp;&nbsp;Blog <i class="fa-solid fa-angle-down nav-item-arrow"></i></a>
             <div class="nav-item-dropdown-mobile-menu">
               <a href="https://lunatix.com.br/pt-br/blog/" class="nav-link">Português</a>
               <a href="https://lunatix.com.br/en/blog/" class="nav-link">English</a>
+            </div>
+          </li>
+          <li class="nav-item-dropdown-mobile"><a href="#" class="nav-link" onclick="blogCtgShow(event);">&nbsp;&nbsp;Categoria <i class="fa-solid fa-angle-down nav-item-arrow"></i></a>
+            <div class="nav-item-dropdown-mobile-category">
+              <a href="https://lunatix.com.br/pt-br/blog/general/" class="nav-link">Geral</a>
+              <a href="#" class="nav-link">Arquitetura de Computadores</a>
+              <a href="#" class="nav-link">Compiladores</a>
+              <a href="#" class="nav-link">Cibersegurança</a>
             </div>
           </li>
           <li class="nav-item-mobile"><a href="https://lunatix.com.br/pt-br/blog/general/welcome/" class="nav-link">Sobre</a></li>
@@ -82,7 +98,7 @@
           <!-- Menu -->
           <div class="menu-box">
             <div class="menu-box-header">
-              <h4>Menu</h4>
+              <h4>Categoria</h4>
             </div>
             <ul>
               <li>
