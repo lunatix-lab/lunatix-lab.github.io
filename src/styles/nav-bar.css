@@ -54,7 +54,7 @@ header {
 
 .nav-list ul li a {
     color: #ffffff;
-    padding: 20px 40px;
+    padding: 15px 30px;
     text-decoration: none;
     transition: 0.2s;
 }
@@ -64,7 +64,7 @@ header {
 }
 
 .nav-item {
-    margin: 0 15px;
+    margin: 0 0px;
 }
 
 .nav-item-dropdown {
@@ -73,7 +73,7 @@ header {
 
 .nav-item-dropdown:hover .nav-item-dropdown-menu {
     display: block;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .nav-item-dropdown:hover .nav-item-arrow {
@@ -100,6 +100,10 @@ header {
     font-size: 1.15rem;
     color: #fff;
     font-weight: 400;
+}
+
+#nav_item_dropdown_category {
+    display: none;
 }
 
 .donate-button button {
@@ -132,7 +136,7 @@ header {
 /******************************************************************************
  * Responsive Header Style
  *****************************************************************************/
-@media screen and (min-width: 400px) and (max-width: 950px) {
+@media screen and (min-width: 400px) and (max-width: 991px) {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -167,10 +171,6 @@ header {
     .nav-item-dropdown-mobile {
         color: #ffffff;
     }
-    .nav-item-dropdown-mobile:hover .nav-item-dropdown-mobile-menu {
-        display: flex;
-    }
-
     .nav-item-dropdown-mobile-menu {
         display: none;
         flex-direction: column;
@@ -180,8 +180,14 @@ header {
         box-shadow: 2px 2px 15px #7f37c9;
         line-height: 2.0;
     }
-    .nav-item-dropdown-mobile:hover .nav-item-arrow {
-        transform: rotate(180deg);
+    .nav-item-dropdown-mobile-category {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 15px #7f37c9;
+        line-height: 2.0;
     }
     .nav-item-arrow {
         transition: 0.2s;
@@ -215,8 +221,15 @@ header {
     .mobile-menu .donate-button button {
         width: 100%;
     }
-    .open {
+    .event-click-open-menu {
         display: flex;
+    }
+    .event-click-open-blog-lng {
+        display: flex;
+    }
+    .event-click-rotate-blog-arrow {
+        transform: rotate(180deg);
+        transition: 0.2s;
     }
  }
 
@@ -258,10 +271,6 @@ header {
     .nav-item-dropdown-mobile {
         color: #ffffff;
     }
-    .nav-item-dropdown-mobile:hover .nav-item-dropdown-mobile-menu {
-        display: flex;
-    }
-
     .nav-item-dropdown-mobile-menu {
         display: none;
         flex-direction: column;
@@ -271,8 +280,14 @@ header {
         box-shadow: 2px 2px 15px #7f37c9;
         line-height: 2.0;
     }
-    .nav-item-dropdown-mobile:hover .nav-item-arrow {
-        transform: rotate(180deg);
+    .nav-item-dropdown-mobile-category {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 15px #7f37c9;
+        line-height: 2.0;
     }
     .nav-item-arrow {
         transition: 0.2s;
@@ -306,7 +321,14 @@ header {
     .mobile-menu .donate-button button {
         width: 100%;
     }
-    .open {
+    .event-click-open-menu {
         display: flex;
+    }
+    .event-click-open-blog-lng {
+        display: flex;
+    }
+    .event-click-rotate-blog-arrow {
+        transform: rotate(180deg);
+        transition: 0.2s;
     }
  }
