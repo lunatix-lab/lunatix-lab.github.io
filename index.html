@@ -40,6 +40,14 @@
                 <a href="https://lunatix.com.br/en/blog/" class="nav-link">English</a>
               </div>
             </li>
+            <li id="nav_item_dropdown_category" class="nav-item-dropdown"><a href="#" class="nav-link">Category <i class="fa-solid fa-angle-down nav-item-arrow"></i></a>
+              <div class="nav-item-dropdown-menu">
+                <a href="https://lunatix.com.br/en/blog/general/" class="nav-link">General</a>
+                <a href="#" class="nav-link">Computer Architecture</a>
+                <a href="#" class="nav-link">Compilers</a>
+                <a href="#" class="nav-link">Cybersecurity</a>
+              </div>
+            </li>
             <li class="nav-item"><a href="https://lunatix.com.br/en/blog/general/welcome/" class="nav-link">About</a></li>
           </ul>
         </div>
@@ -57,10 +65,18 @@
       <div class="mobile-menu">
         <ul>
           <li class="nav-item-mobile"><a href="https://lunatix.com.br/" class="nav-link">Home</a></li>
-          <li class="nav-item-dropdown-mobile"><a href="#" class="nav-link">&nbsp;&nbsp;Blog <i class="fa-solid fa-angle-down nav-item-arrow"></i></a>
+          <li class="nav-item-dropdown-mobile"><a href="#" class="nav-link" onclick="blogLngShow(event);">&nbsp;&nbsp;Blog <i class="fa-solid fa-angle-down nav-item-arrow"></i></a>
             <div class="nav-item-dropdown-mobile-menu">
               <a href="https://lunatix.com.br/pt-br/blog/" class="nav-link">Português</a>
               <a href="https://lunatix.com.br/en/blog/" class="nav-link">English</a>
+            </div>
+          </li>
+          <li class="nav-item-dropdown-mobile"><a href="#" class="nav-link" onclick="blogCtgShow(event);">&nbsp;&nbsp;Category <i class="fa-solid fa-angle-down nav-item-arrow"></i></a>
+            <div class="nav-item-dropdown-mobile-category">
+              <a href="https://lunatix.com.br/en/blog/general/" class="nav-link">General</a>
+              <a href="#" class="nav-link">Computer Architecture</a>
+              <a href="#" class="nav-link">Compilers</a>
+              <a href="#" class="nav-link">Cybersecurity</a>
             </div>
           </li>
           <li class="nav-item-mobile"><a href="https://lunatix.com.br/en/blog/general/welcome/" class="nav-link">About</a></li>
