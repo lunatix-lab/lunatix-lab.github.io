@@ -27,7 +27,7 @@ function blogLngShow(event) {
 
 function blogCtgShow(event) {
     let dropdownMobileMenu = document.querySelector('.nav-item-dropdown-mobile-category');
-    const navItemArrow = event.target.querySelector('.nav-item-arrow');
+    const navItemArrow = event.target.querySelector('.nav-item-arrow-category');
     /* clear the default event */
     event.preventDefault();
 
