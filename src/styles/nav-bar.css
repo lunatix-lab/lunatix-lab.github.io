@@ -192,6 +192,9 @@ header {
     .nav-item-arrow {
         transition: 0.2s;
     }
+    .nav-item-arrow-category {
+        transition: 0.2s;
+    }
     .donate-button {
         display: none;
     }
@@ -290,6 +293,9 @@ header {
         line-height: 2.0;
     }
     .nav-item-arrow {
+        transition: 0.2s;
+    }
+    .nav-item-arrow-category {
         transition: 0.2s;
     }
     .donate-button {
