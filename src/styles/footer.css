@@ -74,8 +74,8 @@ footer {
 
 #footer_subscribe {
     display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 #footer_subscribe p {
@@ -101,6 +101,12 @@ footer {
     opacity: 0.8;
 }
 
+#footer_subscribe_content {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
 #footer_copyright {
     display: flex;
     justify-content: center;
@@ -113,11 +119,10 @@ footer {
 /******************************************************************************
  * Responsive Footer Style
  *****************************************************************************/
- @media screen and (max-width: 1280px) {
-    #footer_subscribe {
+ @media screen and (max-width: 1464px) {
+    #footer_subscribe_content {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
     }
  }
 
